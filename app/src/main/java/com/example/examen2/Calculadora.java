@@ -68,4 +68,15 @@ public class Calculadora {
                 throw new IllegalArgumentException("Base de destino no soportada");
         }
     }
+
+    public static boolean Encuentra(int[] lista, int elemento) {
+        // Recorremos la lista buscando el elemento
+        for (int num : lista) {
+            if (num == elemento) {
+                return true; // Si encontramos el elemento, retornamos true
+            }
+        }
+        return false; // Si no lo encontramos, retornamos false
+    }
+
 }

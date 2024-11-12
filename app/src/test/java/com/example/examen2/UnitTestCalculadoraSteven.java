@@ -53,7 +53,7 @@ public class UnitTestCalculadoraSteven {
     // Prueba 2: Convertir número negativo a decimal
     @Test
     public void testConvertirADestinoDecimalNegativo() {
-        String resultado = Calculadora.convertirADestino(-10, 2);
+        String resultado = Calculadora.convertirADestino(-10, 21); //lo pasamos a base 21 lo cual no funcionará
         assertEquals("-10", resultado); // -10 en decimal es -10
     }
 }
